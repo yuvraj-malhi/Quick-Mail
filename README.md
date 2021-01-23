@@ -64,6 +64,44 @@ Click on “check activity” and then click “Yes, it was me”. This is to al
 
 ### Step VI
 (This may not be required for outlook/ office365 accounts).
+
 In the gmail account, click on your profile image > “Manage your Google account”
+![image](https://user-images.githubusercontent.com/76866159/105606423-6932b680-5dbf-11eb-974c-fed9a092ad2f.png)
+
+Scroll over to the security section.
+
+![image](https://user-images.githubusercontent.com/76866159/105606434-79e32c80-5dbf-11eb-9432-e8f5273b87d3.png)
+
+Now, change the “Off” to “On” in the “Less secure app access” tab. 
+Since, my code is open source, so no worries on that end. This is just to ensure that SMTP mails are allowed.
+
+![image](https://user-images.githubusercontent.com/76866159/105606472-9aab8200-5dbf-11eb-9300-522426fc17dd.png)
+
+Setup Complete! Let's Send some emails!
+
+## Usage
+Now, maximum of 300 mails (or 100 depending on whether the account is gmail, yahoo, office) per day can be sent without any hassle. Here’s an example:
+
+Run the command:    
+
+```sudo ./a.out```
+
+![image](https://user-images.githubusercontent.com/76866159/105606695-e4e13300-5dc0-11eb-8bac-99d2d7bd0c61.png)
+
+
+Fillout the details for every tab according to the below meanings.
+
+TAB | MEANING
+-------|-------
+YOUR_MAIL     | Sender’s email ID
+MAIL_TYPE     | Among: gmail / yahoo / office / outlook 
+PASSWORD      | Sender’s email password. Incorrect password gives “login denied error”
+YOUR NAME     | Doesn’t need to be correct, (but it does show up in the receiver’s inbox)
+TO	      | Receiver’s email. Incorrect email here would not give an error, but email won’t be sent.
+CC	      | CC’s email ID. If left black or if only single digit is passed (like "A" or “1”) then no CC is sent.
+CC_NAME       | Again, doesn’t need to be correct, but shows the name in inbox.
+SUBJECT       | Subject of email.
+BODY  	      | Body of email. (Currently, it can be only text, file upload feature has not been added).
+
 
 
