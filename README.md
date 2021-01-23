@@ -66,6 +66,7 @@ Click on “check activity” and then click “Yes, it was me”. This is to al
 (This may not be required for outlook/ office365 accounts).
 
 In the gmail account, click on your profile image > “Manage your Google account”
+
 ![image](https://user-images.githubusercontent.com/76866159/105606423-6932b680-5dbf-11eb-974c-fed9a092ad2f.png)
 
 Scroll over to the security section.
