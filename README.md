@@ -115,9 +115,10 @@ Thus, we can now send multiple TLS encrypter emails without any hastle.
 
 1. As of now only 4 major emails can be used, but to extend it to other emails, in Line 87 - 
 ![image](https://user-images.githubusercontent.com/76866159/105607148-42767f00-5dc3-11eb-91dc-86ee218093cf.png)
-	A. Create a shortform for that type of email (like AOL) in MAIL_TYPES[] array. 
-	B. Add the corresponding SMTP server address (like smtp.aol….) in SERVERS[] array
-	C. Increase the loop iteration limit in line 91 by 1.
+	
+   A. Create a shortform for that type of email (like AOL) in MAIL_TYPES[] array. 
+   B. Add the corresponding SMTP server address (like smtp.aol….) in SERVERS[] array
+   C. Increase the loop iteration limit in line 91 by 1.
 
 2. Some other mails like yahoo may not work because of their updated privacy policy to not allow 3rd party application to send emails.
 
