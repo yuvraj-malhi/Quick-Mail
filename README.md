@@ -134,3 +134,7 @@ There is just a single function mailer() which is taking arguements and doing ev
 ![image](https://user-images.githubusercontent.com/76866159/105607388-5e2e5500-5dc4-11eb-8214-a22a83bd62f2.png)
 
 main() function just scans and passes the arguements to mailer() which does all the job. Hence, it can be used as an API for any and all purposes.
+
+Do share if you liked my work. Thanks!
+
+:smile:
