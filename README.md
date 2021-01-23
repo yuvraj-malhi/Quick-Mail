@@ -103,5 +103,32 @@ CC_NAME       | Again, doesn’t need to be correct, but shows the name in inbox
 SUBJECT       | Subject of email.
 BODY  	      | Body of email. (Currently, it can be only text, file upload feature has not been added).
 
+After entering all the details, wait for a few seconds and the program will terminate without showing any error.
 
+Check in the receiver's email:
+![image](https://user-images.githubusercontent.com/76866159/105607308-05f75300-5dc4-11eb-808b-64505e36167f.png)
 
+Thus, we can now send multiple TLS encrypter emails without any hastle.
+
+## Points To Note
+
+1. As of now only 4 major emails can be used, but to extend it to other emails, in Line 87 - 
+![image](https://user-images.githubusercontent.com/76866159/105607148-42767f00-5dc3-11eb-91dc-86ee218093cf.png)
+	A. Create a shortform for that type of email (like AOL) in MAIL_TYPES[] array. 
+	B. Add the corresponding SMTP server address (like smtp.aol….) in SERVERS[] array
+	C. Increase the loop iteration limit in line 91 by 1.
+
+2. Some other mails like yahoo may not work because of their updated privacy policy to not allow 3rd party application to send emails.
+
+3. Incase, while sending the email, an error is being received, and if SMTP protocol is known, then uncomment Line 147 to get detail of where error is being produced. Very helpful.
+
+4. Curl SMTP stores the state of email sending procedure in the variable, this is the variable “res” in my program. It may be used by the programmer as per his/her wish. It can be returned from function too if the functionality of the program is to be extended.
+
+## Scalability & Automation
+
+The best part about this whole program is that it can be very easily used in automation.
+There is just a single function mailer() which is taking arguements and doing everything. The main() function has no use at all. 
+
+![image](https://user-images.githubusercontent.com/76866159/105607388-5e2e5500-5dc4-11eb-8214-a22a83bd62f2.png)
+
+main() function just scans and passes the arguements to mailer() which does all the job. Hence, it can be used as an API for any and all purposes.
