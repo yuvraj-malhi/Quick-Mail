@@ -107,6 +107,7 @@ BODY  	      | Body of email. (Currently, it can be only text, file upload featu
 After entering all the details, wait for a few seconds and the program will terminate without showing any error.
 
 Check in the receiver's email:
+
 ![image](https://user-images.githubusercontent.com/76866159/105607308-05f75300-5dc4-11eb-808b-64505e36167f.png)
 
 Thus, we can now send multiple TLS encrypter emails without any hastle.
@@ -114,6 +115,7 @@ Thus, we can now send multiple TLS encrypter emails without any hastle.
 ## Points To Note
 
 1. As of now only 4 major emails can be used, but to extend it to other emails, in Line 87 - 
+
 ![image](https://user-images.githubusercontent.com/76866159/105607148-42767f00-5dc3-11eb-91dc-86ee218093cf.png)
 	
    A. Create a shortform for that type of email (like AOL) in MAIL_TYPES[] array. 
