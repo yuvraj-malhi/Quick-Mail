@@ -69,3 +69,20 @@ Since, my code is open source, so no worries on that end. This is just to ensure
 ![image](https://user-images.githubusercontent.com/76866159/105606472-9aab8200-5dbf-11eb-9300-522426fc17dd.png)
 
 Setup Complete! Let's Send some emails!
+
+
+## Points To Note
+
+1. As of now only 4 major emails can be used, but to extend it to other emails, in Line 87 - 
+
+![image](https://user-images.githubusercontent.com/76866159/105607148-42767f00-5dc3-11eb-91dc-86ee218093cf.png)
+	
+   A. Create a shortform for that type of email (like AOL) in MAIL_TYPES[] array. 
+   B. Add the corresponding SMTP server address (like smtp.aol….) in SERVERS[] array
+   C. Increase the loop iteration limit in line 91 by 1.
+
+2. Some other mails like yahoo may not work because of their updated privacy policy to not allow 3rd party application to send emails.
+
+3. Incase, while sending the email, an error is being received, and if SMTP protocol is known, then uncomment Line 147 to get detail of where error is being produced. Very helpful.
+
+4. Curl SMTP stores the state of email sending procedure in the variable, this is the variable “res” in my program. It may be used by the programmer as per his/her wish. It can be returned from function too if the functionality of the program is to be extended.
